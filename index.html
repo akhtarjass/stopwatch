@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="font/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome.min.css"> -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <div id="timer">
+           <svg width="260"; height="260";>
+           <circle class="defaultCir" cx="125" cy="125" r="120" stroke="#ff88fb" 
+           stroke-width= "10" fill="none"  stroke-linecap="round"/>
+           <circle id="animationCir" cx="125" cy="125" r="120" stroke="#d459cb" 
+           stroke-width= "10" fill="none"  stroke-linecap="round"/>
+           </svg>
+            <span id="hour">0</span> :
+            <span id="min">0</span> :
+            <span id="sec">0</span> :
+            <span id="milisec">0</span>
+        </div>
+        <p>Your time start now</p>
+        <div class="option">
+            <a  id="play" onclick="playfunc()" href="javascript:void(0)"><i class="fa fa-play"></i>
+                <i class="fas fa-pause"></i></a>
+            <a  id="stop"   onclick="stopfunc()" href="javascript:void(0)"><i class="fa fa-stop">
+                Stop</i></a>
+            <a  id="reset" onclick="resetfunc()" href="javascript:void(0)"><i class="fa fa-undo"></i></a>
+        </div>
+    </div>
+
+    <!-- <script src="jquery.min.js"></script> -->
+    <script src="app.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+</body>
+</html>
